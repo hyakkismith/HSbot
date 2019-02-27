@@ -1,1 +1,1 @@
-bot: python hscbot.py
+bot:python hscbot.py
