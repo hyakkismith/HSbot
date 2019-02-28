@@ -62,7 +62,7 @@ async def on_message(message):
     # !join role_name: role_name役職を得る(特定のチャンネルへ入室する)コマンド
     elif message.content.startswith('!join'):
         try:
-            _, role_name = message.content.split("")
+            _, role_name = message.content.split()
         except Exception:
             await client.send_message(message.channel, "「!join チーム名」のフォーマットで使ってください。")
             return
